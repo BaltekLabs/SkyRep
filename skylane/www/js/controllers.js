@@ -17,6 +17,7 @@ angular.module('starter.controllers', [])
       var marker = new google.maps.Marker({
         map: $scope.map,
         position: place.geometry.location
+
       });
 
       google.maps.event.addListener(marker, 'click', function() {
@@ -38,6 +39,7 @@ angular.module('starter.controllers', [])
 
     $scope.mapCreated = function(map) {
       $scope.map = map;
+        
 
       //Wait until the map is loaded
       google.maps.event.addListenerOnce($scope.map, 'idle', function(){
