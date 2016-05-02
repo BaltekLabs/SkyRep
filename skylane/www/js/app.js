@@ -39,7 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.directives'])
     url: '/flight',
     views: {
       'menuContent': {
-        templateUrl: 'templates/flight.html',
+        templateUrl: 'templates/flight.html'
       }
     }
   })
